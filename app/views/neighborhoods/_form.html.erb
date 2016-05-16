@@ -1,0 +1,31 @@
+<div class="form-container">
+  <%= form_for @neighborhood, html: { multipart: true } do |form| %>
+    
+    <table>
+      <tr>
+        <td class="property">Name:</td>
+        <td class="value"><%= form.text_field :name %></td>
+      </tr>
+      <tr>
+        <td class="property">Nickname:</td>
+        <td class="value"><%= form.text_field :nickname %></td>
+      </tr>
+      <tr>
+        <td class="property">Population:</td>
+        <td class="value"><%= form.text_field :population %></td>
+      </tr>
+      <tr>
+        <td class="property">Borough:</td>
+        <td class="value"><%= form.text_field :borough %><br></td>
+      </tr>
+    </table><br>
+    Description:<br>
+    <%= form.text_area :description, class:"description-field" %>
+    <%= form.file_field :image %>
+    <br><br>
+    <div id="button-container2">
+      <%= link_to '&lt; HOME'.html_safe, neighborhoods_path, class: "action-link" %>
+      <%= form.submit 'SAVE &gt;'.html_safe, class:"submit-button" %>
+    </div>
+  <% end %>
+</div>

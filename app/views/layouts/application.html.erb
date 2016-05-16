@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neighborhoods</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <p id="hello">Hello ❤</p>
+      <%= image_tag "brooklyn.png", alt: "brooklyn", id: "logo" %>
+    </div>
+
+    <div id="content">
+      <%= yield %>
+    </div>
+
+    <footer>
+      <p id="footer-text">< CODED IN BROOKLYN BY MALINA /></p>
+    </footer>
+  </div>
+  
+</body>
+</html>

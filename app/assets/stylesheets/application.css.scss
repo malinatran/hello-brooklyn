@@ -1,0 +1,253 @@
+html, body  {
+  border-top: 10px solid #222;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+#header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#hello {
+  color: red;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 5px;
+  margin: 4px auto 0px auto;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#logo {
+  display: block;
+  margin: 0px auto 20px;
+  height: 125px;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+footer {
+  background: url(asset-path('nycskyline.jpg')) right bottom no-repeat;
+  border-bottom: 10px solid #222;
+  height: 105px;
+  position: absolute;
+    bottom: 0;
+    left: 0;
+  width: 100%;
+}
+
+#footer-text {
+  bottom: 0;
+  color: #551A8B;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  position: absolute;
+  text-align: left;
+}
+
+/*Index page*/
+
+.title-container {
+  background-color: rgba(255,255,255,0.9);
+  display: inline-block;
+  height: 45px;
+  width: 100%;
+}
+
+.expand-link {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-left: 90%;
+  text-decoration: none;
+}
+
+.expand-link:hover {
+  color: red;
+}
+
+.card-container1 {
+  border-top: 5px solid #E8E8E8;
+  border-left: 5px solid #D8D8D8;
+  border-bottom: 3px solid #E8E8E8;
+  border-right: 3px solid #E8E8E8;
+  margin: 10px auto;
+  width: 400px;
+}
+
+.name {
+  color: #33CCFF;
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin: 5px 0 10px 10px;
+  padding: 0 10px 10px 10px;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
+  text-align: center;
+}
+
+.name-headline {
+  background-color: #33CCFF;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  padding: 10px 20px;
+}
+
+.card-container2 {
+  margin: 60px auto 0px auto;
+  text-align: center;
+  width: 75%;
+} 
+
+.image {
+  display: inline-block;
+  margin: 0;
+  width: 300px;
+  vertical-align: middle;
+}
+
+.left-container {
+  display: inline-block;
+  margin-right: 5px;
+  width: 300px;
+  vertical-align: top;
+}
+
+.right-container {
+  display: inline-block;
+  height: 100%;
+  margin-left: 5px;
+  width: 300px;
+  vertical-align: top;
+}
+
+.text-container2 {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 130%;
+  margin: 0 auto 20px auto;
+  padding: 0 10px;
+  text-align: left;
+  width: 300px;
+  vertical-align: top;
+}
+
+.button-container {
+  border-bottom: 5px solid #E8E8E8;
+  border-top: 5px solid #E8E8E8;
+  bottom: 0;
+  display: inline-block;
+  float: left;
+  margin: auto;
+  margin-left: 10px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  text-align: left;
+}
+
+.action-link {
+  background-color: rgba(255,255,255,0.9);
+  color: black;
+  display: inline;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.action-link:hover {
+  color: red;
+}
+
+/*Edit page*/
+.form-container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  width: 300px;
+}
+
+.property {
+  font-size: 16px;
+  padding: 5px auto;
+  width: 110px;
+}
+
+input[type=file] {
+  border: none;
+}
+
+input, textarea {
+  border: 0;
+  border-bottom: 1px solid #33CCFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.value {
+  font-size: 14px;
+}
+
+.description-field {
+  height: 75px;
+  width: 280px;
+}
+
+.submit-button {
+  color: black;
+  background-color: rgba(255,255,255,0.9);
+  border: 0px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+}
+
+.submit-button:hover {
+  color: red;
+}
+
+#button-container2 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#content {
+  padding-bottom: 105px;
+}

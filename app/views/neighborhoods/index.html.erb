@@ -1,0 +1,10 @@
+<h3>Check out my favorite neighborhoods:</h3>
+<% @neighborhoods.each do |nabe| %>
+  <div class="card-container1"> 
+    <div class="title-container">
+      <p class="name"><%= nabe.name %></p>
+      <%= link_to '&gt;'.html_safe, neighborhood_path(nabe.id), class: "expand-link" %>
+    </div>
+  </div>
+<% end %>
+<h3><%= link_to '+ ADD A NEIGHBORHOOD', new_neighborhood_path, class: "action-link" %></h3>

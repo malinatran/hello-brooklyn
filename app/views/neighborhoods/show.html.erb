@@ -1,0 +1,19 @@
+<h1><span class="name-headline"><%= @neighborhood.name %></span></h1>
+<div class="card-container2">
+  <div class="left-container"> 
+    <%= image_tag @neighborhood.image.url(:medium), class: "image" %>
+  </div>
+  <div class="right-container">
+    <div class="text-container2">
+      They call me <strong><%= @neighborhood.nickname %></strong>.<br>
+      Home to <strong><%= @neighborhood.population %></strong> New Yorkers.<br>
+      Located in <strong><%= @neighborhood.borough %></strong>.<br>
+      <%= @neighborhood.description %>
+    </div>
+    <span class="button-container">
+      <%= link_to '&lt; HOME'.html_safe, neighborhoods_path, class: "action-link" %>
+      <%= link_to 'EDIT', edit_neighborhood_path(@neighborhood.id), class: "action-link" %>
+      <%= link_to 'DELETE &gt;'.html_safe, @neighborhood, method: 'delete', data: { confirm: "Are you sure?" }, class: "action-link" %>
+    </span>
+  </div>
+</div>
